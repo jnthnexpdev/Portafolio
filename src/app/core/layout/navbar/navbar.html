@@ -1,10 +1,10 @@
-<nav class="w-full h-20 shadow-md rounded-b-2xl flex items-center justify-center">
+<nav class="fixed w-full h-20 shadow-md flex items-center justify-center">
     <div class="menu w-350  flex items-center justify-between">
         <div class="logo flex p-4">
             <h1 class="text-4xl font-semibold"> Jnthnexpdev </h1>
         </div>
 
-        <ul class="flex ">
+        <ul class="hidden lg:flex ">
             <li class="flex items-center hover:cursor-pointer">
                 <a href="#experience" class="flex items-center p-4 text-lg font-normal  hover:text-gray-600 transition">
                     <lucide-angular [img]="BriefcaseBusiness"class="mr-1.5 w-6 h-6 stroke-1.5"></lucide-angular>
@@ -25,7 +25,7 @@
             </li>
         </ul>
 
-        <div class="flex items-center mx-4">
+        <div class="hidden lg:flex items-center mx-4">
             <button (click)="toggleLanguage()" class="p-4 mr-2 flex items-center hover:cursor-pointer">
                 @if(language() === 'es'){
                     <span class="text-sm font-semibold"> ES </span>
@@ -44,5 +44,66 @@
             </button>
         </div>
 
+        <div class="menu lg:hidden">
+            <button class="p-2 mx-4 rounded-lg flex items-center hover:cursor-pointer" (click)="toggleMenu()"> 
+                <lucide-angular [img]="isMenuOpen() ? X : Menu" class="w-6 h-6 stroke-2 stroke-black"></lucide-angular>
+            </button>
+        </div>
+
     </div>
 </nav>
+
+
+@if (isMenuOpen()){
+    <div class="w-75 h-full flex items-start justify-between flex-col bg-white fixed shadow-md z-40 right-0 lg:hidden">
+        <div class="content w-full items-start justify-start flex-col">
+            <div class="logo w-full h-20 flex items-center justify-between">
+                <h1 class="text-lg font-semibold p-4"> Jnthnexpdev </h1>
+
+                <button class="p-2 mx-4 rounded-lg flex items-center hover:cursor-pointer" (click)="toggleMenu()"> 
+                    <lucide-angular [img]="isMenuOpen() ? X : Menu" class="w-6 h-6 stroke-2 stroke-black"></lucide-angular>
+                </button>
+            </div>
+
+            <ul class="flex w-full items-start justify-start flex-col">
+                <li class="flex items-center hover:cursor-pointer w-full">
+                    <a href="#experience" class="flex items-center p-4 text-lg font-normal  hover:text-gray-600 transition">
+                        <lucide-angular [img]="BriefcaseBusiness"class="mr-1.5 w-6 h-6 stroke-1.5"></lucide-angular>
+                        Experiencia
+                    </a>
+                </li>
+                <li class="flex items-center hover:cursor-pointer w-full">
+                    <a href="#experience" class="flex items-center p-4 text-lg font-normal  hover:text-gray-600 transition">
+                        <lucide-angular [img]="ChartNoAxesCombined"class="mr-1.5 w-6 h-6 stroke-1.5"></lucide-angular>
+                        Skills
+                    </a>
+                </li>
+                <li class="flex items-center hover:cursor-pointer w-full">
+                    <a href="#experience" class="flex items-center p-4 text-lg font-normal  hover:text-gray-600 transition">
+                        <lucide-angular [img]="ContactRound"class="mr-1.5 w-6 h-6 stroke-1.5"></lucide-angular>
+                        Contacto
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="flex w-full items-center flex-col p-4">
+            <button (click)="toggleLanguage()" class="w-full p-4 flex items-center justify-center hover:cursor-pointer">
+                @if(language() === 'es'){
+                    <span class="text-sm font-semibold"> ES </span>
+                    <span class="mx-1"> | </span>
+                    <span class="text-sm text-gray-400 font-light"> EN </span>
+                }@else {
+                    <span class="text-sm text-gray-400 font-light"> ES </span>
+                    <span class="mx-1"> | </span>
+                    <span class="text-sm font-semibold"> EN </span>
+                }
+            </button>
+
+            <button class="w-full bg-black-custom px-4 py-3 rounded-lg flex items-center justify-center hover:cursor-pointer hover:bg-gray-700"> 
+                <lucide-angular [img]="Phone" class="my-icon mr-1.5 w-5 h-5 stroke-2 stroke-white"></lucide-angular>
+                <span class="font-normal text-lg text-white"> Contactame  </span>
+            </button>
+        </div>
+    </div>
+}

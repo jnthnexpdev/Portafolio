@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { ChartNoAxesCombined, ContactRound, Phone , BriefcaseBusiness, LucideAngularModule } from 'lucide-angular';
+import { ChartNoAxesCombined, ContactRound, Phone , BriefcaseBusiness, Menu, X, LucideAngularModule } from 'lucide-angular';
 
 type Language = 'es' | 'en';
 
@@ -16,6 +16,8 @@ export class Navbar {
     readonly ContactRound = ContactRound;
     readonly BriefcaseBusiness = BriefcaseBusiness;
     readonly Phone = Phone;
+    readonly Menu = Menu;
+    readonly X = X;
 
     public language = signal<Language>('es');
 
