@@ -8,26 +8,26 @@
             <li class="flex items-center hover:cursor-pointer">
                 <a href="#experience" class="flex items-center p-4 text-md lg:text-lg font-normal  hover:text-gray-600 transition">
                     <lucide-angular [img]="BriefcaseBusiness"class="mr-1.5 w-6 h-6 stroke-1.5"></lucide-angular>
-                    Experiencia
+                    {{ 'navbar.experience' | translate}}
                 </a>
             </li>
             <li class="flex items-center hover:cursor-pointer">
                 <a href="#experience" class="flex items-center p-4 text-md lg:text-lg font-normal  hover:text-gray-600 transition">
                     <lucide-angular [img]="ChartNoAxesCombined"class="mr-1.5 w-6 h-6 stroke-1.5"></lucide-angular>
-                    Skills
+                    {{ 'navbar.skills' | translate}}
                 </a>
             </li>
             <li class="flex items-center hover:cursor-pointer">
                 <a href="#experience" class="flex items-center p-4 text-md lg:text-lg font-normal  hover:text-gray-600 transition">
                     <lucide-angular [img]="ContactRound"class="mr-1.5 w-6 h-6 stroke-1.5"></lucide-angular>
-                    Contacto
+                    {{ 'navbar.contact' | translate}}
                 </a>
             </li>
         </ul>
 
         <div class="hidden lg:flex items-center mx-4">
             <button (click)="toggleLanguage()" class="p-4 mr-2 flex items-center hover:cursor-pointer">
-                @if(language() === 'es'){
+                @if(currentLanguage === 'es'){
                     <span class="text-sm font-semibold"> ES </span>
                     <span class="mx-1"> | </span>
                     <span class="text-sm text-gray-400 font-light"> EN </span>
@@ -40,7 +40,7 @@
 
             <button class="bg-black-custom px-4 py-3 rounded-lg flex items-center hover:cursor-pointer hover:bg-black"> 
                 <lucide-angular [img]="Phone" class="my-icon mr-1.5 w-5 h-5 stroke-2 stroke-white"></lucide-angular>
-                <span class="font-normal text-md lg:text-lg text-white"> Contactame  </span>
+                <span class="font-normal text-md lg:text-lg text-white"> {{ 'navbar.cta' | translate}}  </span>
             </button>
         </div>
 
@@ -69,19 +69,19 @@
                 <li class="flex items-center hover:cursor-pointer w-full">
                     <a href="#experience" class="flex items-center p-4 text-md lg:text-lg font-normal  hover:text-gray-600 transition">
                         <lucide-angular [img]="BriefcaseBusiness"class="mr-1.5 w-6 h-6 stroke-1.5"></lucide-angular>
-                        Experiencia
+                        {{ 'navbar.experience' | translate}}
                     </a>
                 </li>
                 <li class="flex items-center hover:cursor-pointer w-full">
                     <a href="#experience" class="flex items-center p-4 text-md lg:text-lg font-normal  hover:text-gray-600 transition">
                         <lucide-angular [img]="ChartNoAxesCombined"class="mr-1.5 w-6 h-6 stroke-1.5"></lucide-angular>
-                        Skills
+                        {{ 'navbar.skills' | translate}}
                     </a>
                 </li>
                 <li class="flex items-center hover:cursor-pointer w-full">
                     <a href="#experience" class="flex items-center p-4 text-md lg:text-lg font-normal  hover:text-gray-600 transition">
                         <lucide-angular [img]="ContactRound"class="mr-1.5 w-6 h-6 stroke-1.5"></lucide-angular>
-                        Contacto
+                        {{ 'navbar.contact' | translate}}
                     </a>
                 </li>
             </ul>
@@ -89,7 +89,7 @@
 
         <div class="flex w-full items-center flex-col p-4">
             <button (click)="toggleLanguage()" class="w-full p-4 flex items-center justify-center hover:cursor-pointer">
-                @if(language() === 'es'){
+                @if(currentLanguage === 'es'){
                     <span class="text-sm font-semibold"> ES </span>
                     <span class="mx-1"> | </span>
                     <span class="text-sm text-gray-400 font-light"> EN </span>
@@ -102,7 +102,7 @@
 
             <button class="w-full bg-black-custom px-4 py-3 rounded-lg flex items-center justify-center hover:cursor-pointer hover:bg-black"> 
                 <lucide-angular [img]="Phone" class="my-icon mr-1.5 w-5 h-5 stroke-2 stroke-white"></lucide-angular>
-                <span class="font-normal text-md lg:text-lg text-white"> Contactame  </span>
+                <span class="font-normal text-md lg:text-lg text-white"> {{ 'navbar.cta' | translate}}  </span>
             </button>
         </div>
     </div>

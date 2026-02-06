@@ -1,17 +1,20 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, OnInit, signal } from '@angular/core';
 import { ChartNoAxesCombined, ContactRound, Phone , BriefcaseBusiness, Menu, X, LucideAngularModule } from 'lucide-angular';
+import { LanguageService } from '../../services/languageService';
+import { TranslatePipe } from '@ngx-translate/core';
 
 type Language = 'es' | 'en';
 
 @Component({
     selector: 'app-navbar',
     imports: [ 
-        LucideAngularModule
+        LucideAngularModule,
+        TranslatePipe
     ],
     templateUrl: './navbar.html',
     styleUrl: './navbar.css',
 })
-export class Navbar {
+export class Navbar implements OnInit{
     readonly ChartNoAxesCombined = ChartNoAxesCombined;
     readonly ContactRound = ContactRound;
     readonly BriefcaseBusiness = BriefcaseBusiness;
@@ -19,17 +22,27 @@ export class Navbar {
     readonly Menu = Menu;
     readonly X = X;
 
-    public language = signal<Language>('es');
+    public languageService = inject(LanguageService);
+    public currentLanguage !: Language;
 
     public isMenuOpen = signal(true);
 
+    ngOnInit(): void {
+        this.currentLanguage = this.languageService.currentLanguage();
+    }
+
     public toggleMenu() : void{
         this.isMenuOpen.update(value => !value);
-        console.log('Estado del menu: ', this.isMenuOpen());
     }
 
     public toggleLanguage() : void{
-        this.language.update(lang => (lang === 'es' ? 'en' : 'es'));
+        if(this.languageService.currentLanguage() === 'es'){
+            this.languageService.setLang('en');
+        }else{
+            this.languageService.setLang('es');
+        }
+
+        this.currentLanguage = this.languageService.currentLanguage();
     }
 
 }
