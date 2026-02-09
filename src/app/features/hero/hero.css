@@ -1,0 +1,24 @@
+.fade-bottom {
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    black 40%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    black 40%,
+    transparent 100%
+  );
+}
+
+/* .photo-mask {
+    -webkit-mask-image: url('/imgs/mask.svg');
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: re;
+    -webkit-mask-position: center;
+
+    mask-image: url('/imgs/mask.svg');
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+} */

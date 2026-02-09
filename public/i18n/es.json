@@ -4,5 +4,14 @@
         "skills" : "Skills",
         "contact" : "Contacto",
         "cta" : "Contactame"
+    },
+    "hero": {
+        "greeting": "Hola, soy Jonathan Espinosa",
+        "title": "Frontend Developer",
+        "subtitle": "Con experiencia en desarrollo Full Stack",
+        "description": "Tengo más de <strong>un año de experiencia</strong> desarrollando aplicaciones web con <strong>Angular</strong>, <strong>TypeScript</strong> y <strong>TailwindCSS</strong>. He participado en proyectos <strong>Full Stack</strong> trabajando con <strong>Node.js</strong>, <strong>Express</strong> y <strong>MongoDB</strong>, y cuento con conocimientos en <strong>Java</strong>, <strong>Springboot</strong> y <strong>PostgreSQL</strong>.",
+        "mainStack" : "Tecnologías principales",
+        "ctaPrimary": "Contáctame",
+        "ctaSecondary": "Ver proyectos"
     }
 }

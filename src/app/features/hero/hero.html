@@ -1,0 +1,64 @@
+<section class="w-350 min-h-[85dvh] p-5 flex items-center justify-center">
+
+    <div class="w-1/2 description flex items-start flex-col">
+        <h2 class="text-xl lg:text-2xl font-semibold mb-4 uppercase tracking-widest"> {{ 'hero.title' | translate}} </h2>
+
+        <p class="text-4xl lg:text-5xl font-bold leading-tight mb-4"> {{ 'hero.greeting' | translate}} </p>
+
+        <span class="text-xl lg:text-2xl font-medium text-gray-600 mb-4"> {{ 'hero.subtitle' | translate}} </span>
+
+        <p class="text-lg lg:text-xl mb-4" [innerHTML]="'hero.description' | translate"> </p>
+
+        <p class="text-sm uppercase tracking-wider text-gray-500 mb-3">
+            {{ 'hero.mainStack' | translate}}
+        </p>
+
+        <div class="stack flex items-center mb-8">
+            <svg class="w-9 h-10 mr-2 fill-mongo" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <title>Mongo</title>
+                <path d="M17.193 9.555c-1.264-5.58-4.252-7.414-4.573-8.115-.28-.394-.53-.954-.735-1.44-.036.495-.055.685-.523 1.184-.723.566-4.438 3.682-4.74 10.02-.282 5.912 4.27 9.435 4.888 9.884l.07.05A73.49 73.49 0 0111.91 24h.481c.114-1.032.284-2.056.51-3.07.417-.296.604-.463.85-.693a11.342 11.342 0 003.639-8.464c.01-.814-.103-1.662-.197-2.218zm-5.336 8.195s0-8.291.275-8.29c.213 0 .49 10.695.49 10.695-.381-.045-.765-1.76-.765-2.405z"/>
+            </svg>
+
+            <svg class="w-8  h-10 mr-2 fill-black" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <title>Express</title>
+                <path d="M24 18.588a1.529 1.529 0 01-1.895-.72l-3.45-4.771-.5-.667-4.003 5.444a1.466 1.466 0 01-1.802.708l5.158-6.92-4.798-6.251a1.595 1.595 0 011.9.666l3.576 4.83 3.596-4.81a1.435 1.435 0 011.788-.668L21.708 7.9l-2.522 3.283a.666.666 0 000 .994l4.804 6.412zM.002 11.576l.42-2.075c1.154-4.103 5.858-5.81 9.094-3.27 1.895 1.489 2.368 3.597 2.275 5.973H1.116C.943 16.447 4.005 19.009 7.92 17.7a4.078 4.078 0 002.582-2.876c.207-.666.548-.78 1.174-.588a5.417 5.417 0 01-2.589 3.957 6.272 6.272 0 01-7.306-.933 6.575 6.575 0 01-1.64-3.858c0-.235-.08-.455-.134-.666A88.33 88.33 0 010 11.577zm1.127-.286h9.654c-.06-3.076-2.001-5.258-4.59-5.278-2.882-.04-4.944 2.094-5.071 5.264z"/>
+            </svg>
+
+            <svg class="w-12 h-12 mr-2 fill-angular" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                <path d="M281.7 332.1L357.9 332.1L319.8 240.5L281.7 332.1zM319.8 96L112 170.4L143.8 446.1L319.8 544L495.8 446.1L527.6 170.4L319.8 96zM450 437.8L401.4 437.8L375.2 372.4L264.6 372.4L238.4 437.8L189.7 437.8L319.8 145.5L450 437.8z"/>
+            </svg>
+
+            <svg class="w-10 h-10 mr-2 fill-node" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                <path d="M320.5 572C313.8 572 307 570.2 301.1 566.8L239.4 530.3C230.2 525.1 234.7 523.3 237.7 522.3C250 518 252.5 517.1 265.6 509.6C267 508.8 268.8 509.1 270.2 510L317.6 538.1C319.3 539.1 321.7 539.1 323.3 538.1L508 431.5C509.7 430.5 510.8 428.5 510.8 426.5L510.8 213.3C510.8 211.2 509.7 209.3 507.9 208.2L323.3 101.7C321.6 100.7 319.3 100.7 317.6 101.7L133.1 208.3C131.3 209.3 130.2 211.3 130.2 213.4L130.2 426.5C130.2 428.5 131.3 430.5 133.1 431.4L183.7 460.6C211.2 474.3 228 458.2 228 441.9L228 231.5C228 228.5 230.4 226.2 233.4 226.2L256.8 226.2C259.7 226.2 262.2 228.5 262.2 231.5L262.2 442C262.2 478.6 242.2 499.6 207.5 499.6C196.8 499.6 188.4 499.6 165 488L116.6 460.1C104.6 453.2 97.2 440.3 97.2 426.4L97.2 213.3C97.2 199.5 104.6 186.5 116.6 179.6L301.1 73C312.8 66.4 328.3 66.4 339.9 73L524.6 179.7C536.6 186.6 544 199.5 544 213.4L544 426.5C544 440.3 536.6 453.2 524.6 460.2L339.9 566.8C334 570.2 327.3 572 320.5 572zM469.6 361.9C469.6 322 442.6 311.4 385.9 303.9C328.5 296.3 322.7 292.4 322.7 279C322.7 267.9 327.6 253.1 370.1 253.1C408 253.1 422 261.3 427.8 286.9C428.3 289.3 430.5 291.1 433 291.1L457 291.1C458.5 291.1 459.9 290.5 460.9 289.4C461.9 288.3 462.4 286.8 462.3 285.3C458.6 241.2 429.3 220.7 370.1 220.7C317.4 220.7 286 242.9 286 280.2C286 320.6 317.3 331.8 367.8 336.8C428.3 342.7 433 351.6 433 363.5C433 384.1 416.4 392.9 377.5 392.9C328.6 392.9 317.9 380.6 314.3 356.3C313.9 353.7 311.7 351.8 309 351.8L285.1 351.8C282.1 351.8 279.8 354.2 279.8 357.1C279.8 388.2 296.7 425.3 377.6 425.3C436 425.2 469.6 402.1 469.6 361.9z"/>
+            </svg>
+        </div>
+
+        <div class="buttons flex items-center">
+            <button class="bg-black-custom px-4 py-3 border-2 border-black-custom rounded-lg flex items-center hover:cursor-pointer hover:bg-black hover:border-black hover:font-semibold"> 
+                <lucide-angular [img]="Phone" class="my-icon mr-1.5 w-5 h-5 stroke-2 stroke-white"></lucide-angular>
+                <span class="font-normal text-md lg:text-lg text-white"> {{ 'hero.ctaPrimary' | translate}}  </span>
+            </button>
+
+            <button class="bg-transparent px-4 py-3 mx-4 rounded-lg flex items-center hover:cursor-pointer border-2 border-black-custom hover:font-semibold"> 
+                <lucide-angular [img]="Eye" class="my-icon mr-1.5 w-5 h-5 stroke-2 stroke-black-custom"></lucide-angular>
+                <span class="font-normal text-md lg:text-lg text-black-custom"> {{ 'hero.ctaSecondary' | translate}}  </span>
+            </button>
+        </div>
+
+
+    </div>
+
+    <div class="image relative w-1/2 flex justify-center items-center">
+        
+        <svg class="absolute z-6" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#B6F007" d="M66.4,-49.1C81.5,-34.1,85.9,-6.7,79.3,16.5C72.7,39.7,55.1,58.8,33.5,69C12,79.1,-13.6,80.3,-32.6,70.2C-51.6,60.1,-64,38.8,-67.6,17.1C-71.2,-4.6,-66.1,-26.6,-53.4,-41.1C-40.6,-55.6,-20.3,-62.5,2.7,-64.6C25.7,-66.8,51.4,-64.1,66.4,-49.1Z" transform="translate(100 100) scale(1.1)" />
+        </svg>
+
+        <svg class="absolute z-7" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#2B2C28" d="M40.8,-73.1C48.5,-66.1,47.4,-46.4,49.7,-32.1C52,-17.8,57.7,-8.9,62.8,3C68,14.9,72.6,29.7,69.1,41.9C65.6,54.2,54,63.8,41.1,65.1C28.2,66.5,14.1,59.6,0.5,58.8C-13.2,58,-26.3,63.2,-34.6,59.2C-42.9,55.2,-46.2,41.9,-54.7,30.5C-63.2,19.1,-76.8,9.5,-77.7,-0.5C-78.6,-10.6,-66.8,-21.2,-58.9,-33.6C-51,-46,-47,-60.2,-37.8,-66.3C-28.6,-72.4,-14.3,-70.4,1.1,-72.3C16.5,-74.2,33,-80,40.8,-73.1Z" transform="translate(100 100) scale(1.05)" />
+        </svg>
+
+        <img class="fade-bottom relative z-10 w-90 h-90 " src="/imgs/profile1.webp" alt="" srcset="">
+    </div>
+
+</section>
