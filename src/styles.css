@@ -3,6 +3,9 @@
 
 @theme{
   --color-black-custom : #2B2C28;
+  --color-node : #336633;
+  --color-mongo : #023430;
+  --color-angular : #b52e31;
 }
 
 html{
