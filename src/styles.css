@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @import "tailwindcss";
 
-*,
-*::before,
-*::after {
+@theme{
+  --color-black-custom : #2B2C28;
+  --color-node : #336633;
+  --color-mongo : #023430;
+  --color-angular : #b52e31;
+}
+
+html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;

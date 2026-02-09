@@ -1,0 +1,17 @@
+{
+    "navbar" : {
+        "experience" : "Experience",
+        "skills" : "Skills",
+        "contact" : "Contact",
+        "cta" : "Contact me"
+    },
+    "hero": {
+        "greeting": "Hi, I’m Jonathan Espinosa",
+        "title": "Frontend Developer",
+        "subtitle": "With Full Stack development experience",
+        "description": "I have over <strong>one year of experience</strong> building web applications using <strong>Angular</strong>, <strong>TypeScript</strong> and <strong>TailwindCSS</strong>. I’ve worked on <strong>Full Stack</strong> projects with <strong>Node.js</strong>, <strong>Express</strong> and <strong>MongoDB</strong>, and I also have knowledge of <strong>Java</strong>, <strong>Springboot</strong> and <strong>PostgreSQL</strong>.",
+        "mainStack" : "Main Stack",
+        "ctaPrimary": "Contact me",
+        "ctaSecondary": "View projects"
+    }
+}
