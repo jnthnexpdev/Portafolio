@@ -1,0 +1,31 @@
+<div class="card h-full w-full p-4  shadow-md lg:shadow-xl rounded-xl flex items-center flex-col ">
+
+    <div class="w-full h-44 lg:h-55 overflow-hidden rounded-t-xl mb-4">
+        <img
+            [src]=`${path}${experience.img}`
+            alt=""
+            class="w-full h-full  object-fill lg:object-cover"
+        />
+    </div>
+
+    <p class="font-light text-base mb-2 w-full text-left"> {{experience.period}} </p>
+    <h3 class="font-medium text-xl mb-2 w-full text-left"> {{ experience.project }} </h3>
+    <p class="font-normal text-lg mb-2 line-clamp-2 w-full text-left" [innerHTML]="experience.description"></p>
+
+    <div class="stack w-full flex flex-wrap mb-4 gap-2">
+        @for(tech of experience.stack; track $index){
+            <p class="px-2 text-gray-600 border border-gray-600 rounded-xl whitespace-nowrap"> {{tech}} </p>
+        }
+    </div>
+
+    <div class="w-full mt-auto buttons flex items-start justify-start flex-col gap-2 xl:gap-0 xl:flex-row">
+        <button (click)="openDetails(experience)" class="w-full bg-transparent p-1 md:p-2 rounded-lg flex items-center justify-center hover:cursor-pointer border-2 border-black-custom hover:font-semibold"> 
+            <lucide-angular [img]="Eye" class="my-icon mr-1.5 w-5 h-5 stroke-2 stroke-black-custom"></lucide-angular>
+            <span class="font-normal text-sm lg:text-md text-black-custom"> {{ 'experience.buttons.details' | translate }}  </span>
+        </button>
+        <button class="w-full bg-black-custom p-1 md:p-2 xl:mx-4 border-2 border-black-custom rounded-lg flex items-center justify-center hover:cursor-pointer hover:bg-black hover:border-black hover:font-semibold "> 
+            <lucide-angular [img]="Gitlab" class="my-icon mr-1.5 w-5 h-5 stroke-2 stroke-white"></lucide-angular>
+            <span class="font-normal text-sm lg:text-md text-white"> {{ 'experience.buttons.repository' | translate }} Gitlab </span>
+        </button>
+    </div>
+</div>

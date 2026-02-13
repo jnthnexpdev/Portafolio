@@ -13,5 +13,99 @@
         "mainStack" : "Main Stack",
         "ctaPrimary": "Contact me",
         "ctaSecondary": "View projects"
+    },
+    "experience": {
+        "sectionTitle": "Experience",
+        "sectionSubtitle": "Experience building real-world web applications",
+        "items": [
+            {
+                "role": "Full Stack Developer",
+                "project": "CFE – Fleet Management System",
+                "period": "October 2023 – March 2024",
+                "description": "Development of a web system for managing a company's vehicle fleet, focused on maintenance control, issue reporting, and workshop assignment.",
+                "details": [
+                "• Implementation of a publication-based system to report vehicle failures or maintenance needs.<br>• Registered workshops could comment and provide quotes directly from their profiles.<br>• The system allowed comparison of costs, delivery times, and availability to support operational decisions. <br>• Workshop assignment based on priority, budget, and maintenance urgency."
+                ],
+                "stack": ["Angular", "Node.js", "Express", "MongoDB"],
+                "img" : "cfe1.webp",
+                "repositories": {
+                    "frontend": {
+                        "available": "true",
+                        "url": "https://gitlab.com/jnthnexpdev/cfe_frontend",
+                        "platform": "GitLab"
+                    },
+                    "backend": {
+                        "available": "true",
+                        "url": "https://gitlab.com/jnthnexpdev/cfe_backend",
+                        "platform": "GitLab"
+                    }
+                }
+            },
+            {
+                "role": "Backend Developer",
+                "project": "Busher COCDRIL’S – Franchise Backend System",
+                "period": "March 2024 – July 2024",
+                "description": "Development of a backend system for managing branches, employees, menus, and orders in a food franchise.",
+                "details": "• Implementation of a complete backend using Node.js, Express, and MongoDB.</br>• Employee management including roles, salaries, and personal information.</br>• Administration of menus, products, ingredients, combos, and pricing.</br>• Order module with automatic calculation of subtotal, taxes, and total.</br>• Secure authentication using JWT and password encryption.</br>• Generation of daily PDF reports for sales closing.</br>",
+                "stack": ["Node.js", "Express", "MongoDB", "JWT"],
+                "img": "busher1.webp",
+                "repositories": {
+                    "frontend": {
+                        "available": "false",
+                        "url": "",
+                        "platform": ""
+                    },
+                    "backend": {
+                        "available": "true",
+                        "url": "https://github.com/AliciaEspinoza/Backend-BusherCocdrilMovil",
+                        "platform": "GitHub"
+                    }
+                }
+            },
+            {
+                "role": "Frontend Developer",
+                "project": "E-commerce for Electric Bikes Focused on UX/UI Design",
+                "period": "August 2024 – September 2024",
+                "description": "Development of an online store focused on user experience, visual design, and responsive layout.",
+                "details": "• Creation of an online store using WordPress and Elementor.</br>• Full UI customization including colors, typography, and visual components.</br>• Responsive optimization for mobile, tablet, and desktop devices.</br>• Improved navigation and product presentation.</br>• Visual adjustments using custom CSS for a more professional look.</br>",
+                "stack": ["WordPress", "Elementor", "CSS"],
+                "img": "elecbike1.webp"
+            },
+            {
+                "role": "Frontend Developer",
+                "project": "DREFITNESS – Fitness Equipment Online Store",
+                "period": "September 2024 – October 2024",
+                "description": "Online store for fitness equipment with a focus on accessibility, clean design, and user experience.",
+                "details": "• Development of a full e-commerce website using WordPress.</br>• Design focused on accessibility and visual clarity.</br>• Customization of buttons, typography, and color palette.</br>• Fully responsive layout across all devices.</br>• Use of custom CSS to improve visual consistency and usability.</br>",
+                "stack": ["WordPress", "Elementor", "CSS"],
+                "img": "dre1.webp"
+            },
+            {
+                "role": "Full Stack Developer",
+                "project": "Thesis Tracking System – Instituto Tecnológico de Cuautla",
+                "period": "December 2024 – May 2025",
+                "description": "Academic management system for tracking and controlling graduate thesis progress.",
+                "details": "• Development of a complete thesis management system for graduate students.</br>• Administration of academic periods, professors, and students.</br>• Task assignment and thesis progress tracking.</br>• Role-based modules for coordinator, professors, and students.</br>• Bulk user import using CSV files.</br>• Administrative validation and control of thesis status.</br>",
+                "stack": ["Angular", "Node.js", "Express", "MongoDB", "TailwindCSS"],
+                "img": "itc1.webp",
+                "repositories": {
+                    "frontend": {
+                        "available": "true",
+                        "url": "https://github.com/jnthnexpdev/posgrado_frontend",
+                        "platform": "GitHub"
+                    },
+                    "backend": {
+                        "available": "true",
+                        "url": "https://github.com/jnthnexpdev/posgrado_backend",
+                        "platform": "GitHub"
+                    }
+                }
+            }
+        ],
+        "buttons" : {
+            "repository" : "View on",
+            "details" : "View more",
+            "close" : "Close dialog"
+        }
     }
 }
