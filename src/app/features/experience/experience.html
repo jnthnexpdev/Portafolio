@@ -1,0 +1,11 @@
+<section class="w-full max-w-350 min-h-[85dvh] p-5 flex items-center justify-start flex-col">
+    <h2 class="text-4xl lg:text-5xl font-bold leading-tight text-center mb-8"> {{ 'experience.sectionTitle' | translate }} </h2>
+
+    <p class="text-xl lg:text-2xl font-medium text-gray-600 mb-8 max-w-md text-center"> {{ 'experience.sectionSubtitle' | translate}} </p>
+
+    <div class="cards w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-stretch place-content-between md:gap-8">
+        @for (experience of experiences; track $index){
+            <app-experience-card [experience]="experience"></app-experience-card>
+        }
+    </div>
+</section>

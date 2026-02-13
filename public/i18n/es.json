@@ -13,5 +13,98 @@
         "mainStack" : "Tecnologías principales",
         "ctaPrimary": "Contáctame",
         "ctaSecondary": "Ver proyectos"
+    },
+    "experience": {
+        "sectionTitle": "Experiencia",
+        "sectionSubtitle": "Experiencia construyendo aplicaciones web reales",
+        "items": [
+            {
+                "role": "Desarrollador Full Stack",
+                "project": "CFE – Sistema de Gestión de Parque Vehicular",
+                "period": "Octubre 2023 – Marzo 2024",
+                "description": "Desarrollo de un sistema web para la gestión del parque vehicular de una empresa, enfocado en la administración de mantenimientos, fallas y asignación de talleres.",
+                "details": "• Implementación de un sistema de publicaciones donde los vehículos reportaban fallas o mantenimientos requeridos.</br>•  Los talleres registrados podían comentar y cotizar directamente desde sus perfiles.</br>•  El sistema permitía comparar costos, tiempos de entrega y disponibilidad para tomar decisiones operativas.</br>• Asignación de talleres según prioridad, presupuesto y urgencia del mantenimiento.",
+                "stack": ["Angular", "Node.js", "Express", "MongoDB"],
+                "img" : "cfe1.webp",
+                "repositories": {
+                    "frontend": {
+                        "available": "true",
+                        "url": "https://gitlab.com/jnthnexpdev/cfe_frontend",
+                        "platform": "GitLab"
+                    },
+                    "backend": {
+                        "available": "true",
+                        "url": "https://gitlab.com/jnthnexpdev/cfe_backend",
+                        "platform": "GitLab"
+                    }
+                }
+            },
+            {
+                "role": "Desarrollador Backend",
+                "project": "Busher COCDRIL’S – Sistema Backend para Franquicia",
+                "period": "Marzo 2024 – Julio 2024",
+                "description": "Desarrollo de un sistema backend para la gestión de sucursales, empleados, menús y órdenes en una franquicia de comida.",
+                "details": "• Implementación de un backend completo utilizando Node.js, Express y MongoDB.</br>• Gestión de empleados con roles, salarios y datos personales.</br>• Administración de menús, productos, ingredientes, combos y precios.</br>• Módulo de órdenes con cálculo automático de subtotal, impuestos y total.</br>• Autenticación segura mediante JWT y cifrado de contraseñas.</br>• Generación de reportes diarios en PDF con el cierre de ventas.",
+                "stack": ["Node.js", "Express", "MongoDB", "JWT"],
+                "img": "busher1.webp",
+                "repositories": {
+                    "frontend": {
+                        "available": "false",
+                        "url": "",
+                        "platform": ""
+                    },
+                    "backend": {
+                        "available": "true",
+                        "url": "https://github.com/AliciaEspinoza/Backend-BusherCocdrilMovil",
+                        "platform": "GitHub"
+                    }
+                }
+            },
+            {
+                "role": "Desarrollador Frontend",
+                "project": "Tienda en Línea de Bicicletas Eléctricas con Enfoque en UX/UI",
+                "period": "Agosto 2024 – Septiembre 2024",
+                "description": "Desarrollo de una tienda en línea enfocada en experiencia de usuario, diseño visual y adaptación responsive.",
+                "details": "• Construcción de una tienda online utilizando WordPress y Elementor.</br>• Personalización completa de la interfaz visual: colores, tipografía y componentes.</br>• Optimización del diseño responsive para dispositivos móviles, tablet y escritorio.</br>• Mejoras en la experiencia de navegación y presentación de productos.</br>• Ajustes visuales mediante CSS para lograr un diseño más profesional y coherente.",
+                "stack": ["WordPress", "Elementor", "CSS"],
+                "img": "elecbike1.webp"
+            },
+            {
+                "role": "Desarrollador Frontend",
+                "project": "DREFITNESS – Tienda de Equipamiento Deportivo",
+                "period": "Septiembre 2024 – Octubre 2024",
+                "description": "Tienda en línea para venta de equipo de gimnasio con enfoque en accesibilidad, diseño limpio y experiencia de usuario.",
+                "details": "• Desarrollo de un e-commerce utilizando WordPress.</br>• Diseño enfocado en accesibilidad y claridad visual.</br>• Personalización de botones, tipografía y paleta de colores.</br>• Implementación de diseño completamente responsive.</br>• Uso de CSS personalizado para mejorar consistencia visual y usabilidad.",
+                "stack": ["WordPress", "Elementor", "CSS"],
+                "img": "dre1.webp"
+            },
+            {
+                "role": "Desarrollador Full Stack",
+                "project": "Sistema de Seguimiento de Tesis – Instituto Tecnológico de Cuautla",
+                "period": "Diciembre 2024 – Mayo 2025",
+                "description": "Sistema académico para el seguimiento y control del progreso de tesis de posgrado.",
+                "details": "• Desarrollo de un sistema completo para la gestión de tesis de posgrado.</br>• Administración de periodos académicos, profesores y alumnos.</br>• • Asignación de tareas y seguimiento del progreso de tesis.</br>• Módulos diferenciados para coordinador, profesores y estudiantes.</br>• Importación masiva de usuarios mediante archivos CSV.</br>• Validación administrativa y control del estado de cada tesis.",
+                "stack": ["Angular", "Node.js", "Express", "MongoDB", "TailwindCSS"],
+                "img": "itc1.webp",
+                "repositories": {
+                    "frontend": {
+                        "available": "true",
+                        "url": "https://github.com/jnthnexpdev/posgrado_frontend",
+                        "platform": "GitHub"
+                    },
+                    "backend": {
+                        "available": "true",
+                        "url": "https://github.com/jnthnexpdev/posgrado_backend",
+                        "platform": "GitHub"
+                    }
+                }
+            }
+
+        ],
+        "buttons" : {
+            "repository" : "Ver en",
+            "details" : "Ver mas",
+            "close" : "Cerrar"
+        }
     }
 }
