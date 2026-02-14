@@ -37,7 +37,7 @@ class="card w-[90%] mx-[5%] md:mx-0 md:w-180 max-h-[90vh] overflow-y-auto overfl
             @if(data.repositories.frontend){
                 @switch(data.repositories.frontend.platform){
                     @case('GitLab'){
-                        <button class="bg-black-custom p-2 border-2 border-black-custom rounded-lg flex items-center justify-center hover:cursor-pointer hover:bg-black hover:border-black hover:font-semibold "> 
+                        <button (click)="redirectToRepository(data.repositories.frontend.url)" class="bg-black-custom p-2 border-2 border-black-custom rounded-lg flex items-center justify-center hover:cursor-pointer hover:bg-black hover:border-black hover:font-semibold "> 
                             <lucide-angular [img]="Gitlab" class="my-icon mr-1.5 w-5 h-5 stroke-2 stroke-white"></lucide-angular>
 
                             <span class="font-normal text-sm lg:text-md text-white"> 
@@ -46,7 +46,7 @@ class="card w-[90%] mx-[5%] md:mx-0 md:w-180 max-h-[90vh] overflow-y-auto overfl
                         </button>
                     }
                     @case('GitHub'){
-                        <button class="bg-black-custom p-2 border-2 border-black-custom rounded-lg flex items-center justify-center hover:cursor-pointer hover:bg-black hover:border-black hover:font-semibold "> 
+                        <button (click)="redirectToRepository(data.repositories.frontend.url)" class="bg-black-custom p-2 border-2 border-black-custom rounded-lg flex items-center justify-center hover:cursor-pointer hover:bg-black hover:border-black hover:font-semibold "> 
                             <lucide-angular [img]="Github" class="my-icon mr-1.5 w-5 h-5 stroke-2 stroke-white"></lucide-angular>
 
                             <span class="font-normal text-sm lg:text-md text-white"> 
@@ -58,7 +58,7 @@ class="card w-[90%] mx-[5%] md:mx-0 md:w-180 max-h-[90vh] overflow-y-auto overfl
             }@if(data.repositories.backend){
                 @switch(data.repositories.backend.platform){
                     @case('GitLab'){
-                        <button class="bg-black-custom p-2 border-2 border-black-custom rounded-lg flex items-center justify-center hover:cursor-pointer hover:bg-black hover:border-black hover:font-semibold "> 
+                        <button (click)="redirectToRepository(data.repositories.backend.url)" class="bg-black-custom p-2 border-2 border-black-custom rounded-lg flex items-center justify-center hover:cursor-pointer hover:bg-black hover:border-black hover:font-semibold "> 
                             <lucide-angular [img]="Gitlab" class="my-icon mr-1.5 w-5 h-5 stroke-2 stroke-white"></lucide-angular>
 
                             <span class="font-normal text-sm lg:text-md text-white"> 
@@ -67,7 +67,7 @@ class="card w-[90%] mx-[5%] md:mx-0 md:w-180 max-h-[90vh] overflow-y-auto overfl
                         </button>
                     }
                     @case('GitHub'){
-                        <button class="bg-black-custom p-2 border-2 border-black-custom rounded-lg flex items-center justify-center hover:cursor-pointer hover:bg-black hover:border-black hover:font-semibold "> 
+                        <button (click)="redirectToRepository(data.repositories.backend.url)" class="bg-black-custom p-2 border-2 border-black-custom rounded-lg flex items-center justify-center hover:cursor-pointer hover:bg-black hover:border-black hover:font-semibold "> 
                             <lucide-angular [img]="Github" class="my-icon mr-1.5 w-5 h-5 stroke-2 stroke-white"></lucide-angular>
 
                             <span class="font-normal text-sm lg:text-md text-white"> 
