@@ -1,5 +1,6 @@
 import { DIALOG_DATA, DialogRef } from '@angular/cdk/dialog';
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Router } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import { LucideAngularModule, Gitlab, Minimize2, IdCardLanyard, X, CalendarRange, Github } from 'lucide-angular';
 
@@ -17,6 +18,7 @@ export class ProjectDialog{
     readonly CalendarRange = CalendarRange;
     readonly IdCardLanyard = IdCardLanyard;
 
+    public router = inject(Router);
     public data = inject(DIALOG_DATA);
     public dialogRef = inject(DialogRef);
 
@@ -24,5 +26,9 @@ export class ProjectDialog{
 
     public closeDialog() : void{
         this.dialogRef.close();
+    }
+
+    public redirectToRepository(url : string) : void{
+        window.open(url, '_blank', 'noopener, noreferrer');
     }
 }
