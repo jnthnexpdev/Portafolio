@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
-import { LucideAngularModule, Phone, Eye } from 'lucide-angular';
+import { LucideAngularModule, FileDown, Eye } from 'lucide-angular';
 
 @Component({
   selector: 'app-hero',
@@ -9,6 +9,6 @@ import { LucideAngularModule, Phone, Eye } from 'lucide-angular';
   styleUrl: './hero.css',
 })
 export class Hero {
-    readonly Phone = Phone;
+    readonly FileDown = FileDown;
     readonly Eye = Eye;
 }
