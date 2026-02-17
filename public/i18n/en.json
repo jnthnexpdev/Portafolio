@@ -107,5 +107,46 @@
             "details" : "View more",
             "close" : "Close dialog"
         }
-    }
+    },
+    "skills": {
+        "sectionTitle": "Skills",
+        "sectionSubtitle": "Technologies and tools I work with",
+        "categories": {
+            "frontend": {
+            "title": "Frontend",
+            "items": [
+                { "name": "Angular", "image": "angular.svg" },
+                { "name": "TypeScript", "image": "typescript.svg" },
+                { "name": "JavaScript", "image": "javascript.svg" },
+                { "name": "TailwindCSS", "image": "tailwind.svg" },
+                { "name": "HTML5", "image": "html.svg" },
+                { "name": "CSS3", "image": "css.png" }
+            ]
+            },
+            "backend": {
+            "title": "Backend & Databases",
+            "items": [
+                { "name": "Node.js", "image": "nodejs.svg" },
+                { "name": "Express", "image": "express.svg" },
+                { "name": "MongoDB", "image": "mongodb.svg" },
+                { "name": "PostgreSQL", "image": "postgresql.svg" },
+                { "name": "Java", "image": "java.svg" },
+                { "name": "Spring Boot", "image": "springboot.svg" }
+            ]
+            },
+            "tools": {
+            "title": "Tools & DevOps",
+            "items": [
+                { "name": "Git", "image": "git.svg" },
+                { "name": "GitHub", "image": "github.svg" },
+                { "name": "GitLab", "image": "gitlab.svg" },
+                { "name": "Postman", "image": "postman.svg" },
+                { "name": "Vercel", "image": "vercel.svg" },
+                { "name": "Render", "image": "render.svg" }
+            ]
+            }
+        }
+        }
+
+
 }

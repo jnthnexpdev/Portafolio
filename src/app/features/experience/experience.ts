@@ -1,7 +1,7 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 import { ExperienceCard } from "./experience-card/experience-card";
-import { ExperienceModel } from '../../core/models/experience.model';
+import { ExperienceModel } from './interfaces/experience.model';
 
 
 @Component({
@@ -17,7 +17,6 @@ export class Experience implements OnInit{
     ngOnInit(): void {
         this.translate.onLangChange.subscribe(() => {
             this.loadExperience();
-            console.log(this.experiences);
         });
     }
 
