@@ -1,5 +1,5 @@
 import { Component, inject, Input } from '@angular/core';
-import { ExperienceModel } from '../../../core/models/experience.model';
+import { ExperienceModel } from '../interfaces/experience.model';
 import { LucideAngularModule, Gitlab, Eye  } from 'lucide-angular';
 import { TranslatePipe } from '@ngx-translate/core';
 import { Dialog } from '@angular/cdk/dialog';
