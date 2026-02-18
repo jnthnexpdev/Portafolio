@@ -5,6 +5,17 @@
         "contact" : "Contacto",
         "cta" : "Contactame"
     },
+    "footer" : {
+        "job" : "Desarrollador Web Full Stack",
+        "contact" : {
+            "title" : "Información de contacto",
+            "email" : "jnthnexpdev@gmail.com",
+            "phone" : "7352236351",
+            "location" : "Morelos",
+            "availability" : "Presencial | Remoto | Reubicación"
+        },
+        "copyright" : "Todos los derechos reservados."
+    },
     "hero": {
         "greeting": "Hola, soy Jonathan Espinosa",
         "title": "Frontend Developer",
