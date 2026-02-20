@@ -94,7 +94,7 @@
                 "project": "Sistema de Seguimiento de Tesis – Instituto Tecnológico de Cuautla",
                 "period": "Diciembre 2024 – Mayo 2025",
                 "description": "Sistema académico para el seguimiento y control del progreso de tesis de posgrado.",
-                "details": "• Desarrollo de un sistema completo para la gestión de tesis de posgrado.</br>• Administración de periodos académicos, profesores y alumnos.</br>• • Asignación de tareas y seguimiento del progreso de tesis.</br>• Módulos diferenciados para coordinador, profesores y estudiantes.</br>• Importación masiva de usuarios mediante archivos CSV.</br>• Validación administrativa y control del estado de cada tesis.",
+                "details": "• Desarrollo de un sistema completo para la gestión de tesis de posgrado.</br>• Administración de periodos académicos, profesores y alumnos.</br>• Asignación de tareas y seguimiento del progreso de tesis.</br>• Módulos diferenciados para coordinador, profesores y estudiantes.</br>• Importación masiva de usuarios mediante archivos CSV.</br>• Validación administrativa y control del estado de cada tesis.",
                 "stack": ["Angular", "Node.js", "Express", "MongoDB", "TailwindCSS"],
                 "img": "itc1.webp",
                 "repositories": {
@@ -136,7 +136,7 @@
                 "backend": {
                 "title": "Backend & Bases de Datos",
                 "items": [
-                    { "name": "Node.js", "image": "node.svg" },
+                    { "name": "Node.js", "image": "nodejs.svg" },
                     { "name": "Express", "image": "express.svg" },
                     { "name": "MongoDB", "image": "mongodb.svg" },
                     { "name": "PostgreSQL", "image": "postgresql.svg" },
@@ -156,7 +156,38 @@
                 ]
             }
         }
+    },
+    "contact": {
+        "sectionTitle": "Contacto",
+        "sectionSubtitle": "¿Tienes una oportunidad o proyecto en mente? Hablemos.",
+        "info": {
+            "title" : "Información de contacto",
+            "description" : "Estoy interesado en formar parte de una empresa que me permita seguir desarrollando mis habilidades y asumir nuevos retos. Asimismo, estoy disponible para proyectos freelance y abierto a oportunidades presenciales, remotas o con opción de reubicación.",
+            "location": "Morelos, México",
+            "availability": "Presencial | Remoto | Reubicación",
+            "phone": "+52 735 223 6351",
+            "email": "jnthnexpdev@gmail.com"
+        },
+        "form": {
+            "title": "Envíame un mensaje",
+            "name": {
+                "label": "Nombre",
+                "placeholder": "Tu nombre completo",
+                "error": "El nombre es obligatorio"
+            },
+            "email": {
+                "label": "Correo electrónico",
+                "placeholder": "ejemplo@correo.com",
+                "error": "Ingresa un correo válido"
+            },
+            "message": {
+                "label": "Mensaje",
+                "placeholder": "Cuéntame sobre tu proyecto o propuesta...",
+                "error": "El mensaje no puede estar vacío"
+            },
+            "button": "Enviar mensaje",
+            "success": "Mensaje enviado correctamente. Te responderé pronto."
+        }
     }
-
 
 }
