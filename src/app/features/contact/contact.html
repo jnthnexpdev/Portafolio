@@ -1,0 +1,63 @@
+<section class="w-full xl:max-w-350 p-5 flex items-center justify-center flex-col">
+    <h2 class="w-full text-4xl lg:text-5xl font-bold leading-tight text-center mb-8"> {{ 'contact.sectionTitle' | translate }} </h2>
+
+    <p class="w-full text-xl md:text-2xl font-medium text-gray-600 mb-8 text-center"> {{ 'contact.sectionSubtitle' | translate }} </p>
+
+    <div class="content xl:max-w-350 flex items-start justify-between flex-col md:flex-row gap-8">
+        <div class="info w-full md:w-2/5">
+            <h4 class="font-semibold text-xl lg:text-2xl mb-4"> {{ 'contact.info.title' | translate}} </h4>
+            <p class="text-lg lg:text-xl mb-4 "> {{ 'contact.info.description' | translate}} </p>
+            <ul class="mb-2 flex flex-col gap-2">
+                    <li class="flex items-center mb-2">
+                        <lucide-angular [img]="MapPinned"class="mr-2 w-5 h-5 stroke-2"></lucide-angular>
+                        <p class="text-lg font-light"> {{ 'contact.info.location' | translate }} </p>
+                    </li>
+                    <li class="flex items-center mb-2">
+                        <lucide-angular [img]="Building" class="mr-2 w-5 h-5 stroke-2"></lucide-angular>
+                        <p class="text-lg font-light"> {{ 'contact.info.availability' | translate }} </p>
+                    </li>
+                    <li class="flex items-center mb-2">
+                        <lucide-angular [img]="Phone" class="mr-2 w-5 h-5 stroke-2"></lucide-angular>
+                        <p class="text-lg font-light"> {{ 'contact.info.phone' | translate }} </p>
+                    </li>
+                    <li class="flex items-center mb-2">
+                        <lucide-angular [img]="Mail" class="mr-2 w-5 h-5 stroke-2"></lucide-angular>
+                        <p class="text-lg font-light"> {{ 'contact.info.email' | translate }} </p>
+                    </li>
+            </ul>
+        </div>
+
+        <form action="" class="w-full md:w-3/5 md:max-w-110 lg:w-2/5 lg:max-w-150 p-5 flex items-center justify-center flex-col shadow-md rounded-xl">
+            <h4 class="font-semibold text-2xl mb-2"> {{ 'contact.form.title' | translate }} </h4>
+            
+            <label for="full-name" class="w-full flex items-center justify-start font-medium text-lg mb-2">
+                <lucide-angular [img]="User"class="mr-1 w-5 h-5 stroke-2"></lucide-angular>
+                {{ 'contact.form.name.label' | translate }}:
+            </label>
+
+            <input class="w-full px-2 rounded border text-lg mb-4 outline-0 offset-none text-gray-600" type="text" name="full-name" id="full-name" [placeholder]="'contact.form.name.placeholder' | translate" >
+
+            <label for="email" class="w-full flex items-center justify-start font-medium text-lg mb-2">
+                <lucide-angular [img]="AtSignIcon"class="mr-1 w-5 h-5 stroke-2"></lucide-angular>
+                {{ 'contact.form.email.label' | translate }}:
+            </label>
+
+            <input class="w-full px-2 rounded border text-lg mb-4 outline-0 offset-none text-gray-600" type="text" name="email" id="email" [placeholder]="'contact.form.email.placeholder' | translate">
+
+            <label for="message" class="w-full flex items-center justify-start font-medium text-lg mb-2">
+                <lucide-angular [img]="Mail"class="mr-1 w-5 h-5 stroke-2"></lucide-angular>
+                {{ 'contact.form.message.label' | translate }}:
+            </label>
+
+            <input class="w-full px-2 rounded border text-lg mb-4 outline-0 offset-none text-gray-600" type="text" name="message" id="message" [placeholder]="'contact.form.message.placeholder' | translate">
+
+            <button class="bg-black-custom w-full py-1 border-2 border-black-custom rounded-lg flex justify-center items-center hover:cursor-pointer hover:bg-black hover:border-black hover:font-semibold"> 
+                <lucide-angular [img]="MessagesSquare" class="my-icon mr-2 w-5 h-5 stroke-2 stroke-white"></lucide-angular>
+                <span class="font-normal text-md lg:text-lg text-white"> {{ 'contact.form.button' | translate}}  </span>
+            </button>
+
+        </form>
+    </div>
+
+
+</section>

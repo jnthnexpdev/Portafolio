@@ -157,5 +157,38 @@
             ]
             }
         }
+    },
+    "contact": {
+        "sectionTitle": "Contact",
+        "sectionSubtitle": "Have an opportunity or project in mind? Let's talk.",
+        "info": {
+            "title" : "Contact information",
+            "description" : "I am currently looking to join a company where I can contribute as a developer and continue growing professionally. I am also open to freelance projects and opportunities on-site, remote, or with relocation possibilities.",
+            "location": "Morelos, Mexico",
+            "availability": "On-site | Remote | Open to relocation",
+            "phone": "+52 735 223 6351",
+            "email": "jnthnexpdev@gmail.com"
+        },
+        "form": {
+            "title": "Send me a message",
+            "name": {
+                "label": "Name",
+                "placeholder": "Your full name",
+                "error": "Name is required"
+            },
+            "email": {
+                "label": "Email",
+                "placeholder": "example@email.com",
+                "error": "Please enter a valid email"
+            },
+            "message": {
+                "label": "Message",
+                "placeholder": "Tell me about your project or proposal...",
+                "error": "Message cannot be empty"
+            },
+            "button": "Send message",
+            "success": "Message sent successfully. I will get back to you soon."
+        }
     }
+
 }
