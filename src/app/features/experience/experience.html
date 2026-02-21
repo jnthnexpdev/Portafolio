@@ -3,7 +3,7 @@
 
     <p class="text-xl lg:text-2xl font-medium text-gray-600 mb-8 max-w-md text-center"> {{ 'experience.sectionSubtitle' | translate}} </p>
 
-    <div class="cards w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-stretch place-content-between sm:gap-4">
+    <div class="cards w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-stretch place-content-between sm:gap-8">
         @for (experience of experiences; track $index){
             <app-experience-card [experience]="experience"></app-experience-card>
         }
