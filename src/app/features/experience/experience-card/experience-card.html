@@ -1,4 +1,4 @@
-<div class="card max-w-100 h-full w-full p-4 shadow-md md:max-w-full lg:shadow-xl rounded-xl flex items-center flex-col ">
+<div class="card max-w-100 h-full w-full p-4 shadow-md md:max-w-full rounded-xl flex items-center flex-col ">
 
     <div class="w-full h-44 lg:h-55 overflow-hidden rounded-t-xl mb-4 md:h-50">
         <img
@@ -19,9 +19,9 @@
     </div>
 
     <div class="w-full mt-auto buttons flex items-start justify-start flex-col gap-2 xl:gap-0 xl:flex-row">
-        <button (click)="openDetails(experience)" class="w-full bg-transparent p-1 md:p-2 rounded-lg flex items-center justify-center hover:cursor-pointer border-2 border-black-custom hover:font-semibold"> 
-            <lucide-angular [img]="Eye" class="my-icon mr-1.5 w-5 h-5 stroke-2 stroke-black-custom"></lucide-angular>
-            <span class="font-normal text-sm lg:text-md text-black-custom"> {{ 'experience.buttons.details' | translate }}  </span>
+        <button (click)="openDetails(experience)" class="bg-black-custom w-full p-1 md:p-2 rounded-lg flex justify-center items-center hover:cursor-pointer hover:bg-black hover:border-black hover:font-semibold"> 
+            <lucide-angular [img]="Eye" class="my-icon mr-1.5 w-5 h-5 stroke-2 stroke-white"></lucide-angular>
+            <span class="font-normal text-sm lg:text-md text-white"> {{ 'experience.buttons.details' | translate }}  </span>
         </button>
     </div>
 </div>
