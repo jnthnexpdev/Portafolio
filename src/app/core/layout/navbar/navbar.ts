@@ -1,5 +1,5 @@
 import { Component, inject, OnInit, signal } from '@angular/core';
-import { ChartNoAxesCombined, ContactRound, Phone , BriefcaseBusiness, Menu, X, LucideAngularModule } from 'lucide-angular';
+import { ChartNoAxesCombined, ContactRound, Phone, Home, BriefcaseBusiness, Menu, X, LucideAngularModule } from 'lucide-angular';
 import { LanguageService } from '../../services/languageService';
 import { TranslatePipe } from '@ngx-translate/core';
 
@@ -17,6 +17,7 @@ type Language = 'es' | 'en';
 export class Navbar implements OnInit{
     readonly ChartNoAxesCombined = ChartNoAxesCombined;
     readonly ContactRound = ContactRound;
+    readonly Home = Home;
     readonly BriefcaseBusiness = BriefcaseBusiness;
     readonly Phone = Phone;
     readonly Menu = Menu;
@@ -25,7 +26,7 @@ export class Navbar implements OnInit{
     public languageService = inject(LanguageService);
     public currentLanguage !: Language;
 
-    public isMenuOpen = signal(true);
+    public isMenuOpen = signal(false);
 
     ngOnInit(): void {
         this.currentLanguage = this.languageService.currentLanguage();
@@ -43,6 +44,24 @@ export class Navbar implements OnInit{
         }
 
         this.currentLanguage = this.languageService.currentLanguage();
+    }
+
+    public scrollTo(sectionId : string) : void{
+        const yOffset = -100;
+        const elemet = document.getElementById(sectionId);
+
+        if(elemet){
+            const y = elemet.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+            window.scrollTo({
+                top : y,
+                behavior : 'smooth'
+            });
+        }
+
+        if(this.isMenuOpen()){
+            this.isMenuOpen.set(false);
+        }
     }
 
 }

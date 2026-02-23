@@ -1,10 +1,21 @@
 <div class="content w-full min-h-dvh flex flex-col items-center ">
     <app-navbar class="w-full"></app-navbar>
 
-    <app-hero class="mt-20"></app-hero>
-    <app-experience class="mt-10"></app-experience>
-    <app-skills class="w-full flex items-center justify-center mt-10"></app-skills>
-    <app-contact class="mt-10"></app-contact>
+    <app-hero id="hero" class="mt-20" animateOnScroll
+    animationType="fade">
+    </app-hero>
+
+    <app-experience id="experience" class="mt-10" animateOnScroll
+    animationType="left">
+    </app-experience>
+
+    <app-skills  id="skills" class="w-full flex items-center justify-center mt-10" 
+    animateOnScroll animationType="right">
+    </app-skills>
+
+    <app-contact id="contact" class="mt-10" 
+    animateOnScroll animationType="left">
+    </app-contact>
 
     <app-footer class="w-full mt-10"></app-footer>
 </div>
