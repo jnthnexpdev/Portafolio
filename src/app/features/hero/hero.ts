@@ -11,4 +11,18 @@ import { LucideAngularModule, FileDown, Eye } from 'lucide-angular';
 export class Hero {
     readonly FileDown = FileDown;
     readonly Eye = Eye;
+
+    public scrollTo(sectionId : string) : void{
+        const yOffset = -100;
+        const elemet = document.getElementById(sectionId);
+
+        if(elemet){
+            const y = elemet.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+            window.scrollTo({
+                top : y,
+                behavior : 'smooth'
+            });
+        }
+    }
 }

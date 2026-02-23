@@ -1,4 +1,4 @@
-<section class="w-full 2xl:w-350 min-h-[80dvh] p-5 flex items-center justify-center flex-col md:flex-row">
+<section class="w-full xl:max-w-350 min-h-[80dvh] p-5 flex items-center justify-center flex-col md:flex-row">
 
     <div class="w-full h-full mb-15 md:w-1/2 description flex items-start flex-col xl:mb-0">
         <h2 class="text-xl lg:text-2xl font-semibold mb-4 uppercase tracking-widest"> {{ 'hero.title' | translate}} </h2>
@@ -36,7 +36,7 @@
         </div>
 
         <div class="w-full buttons flex items-center justify-center flex-col gap-4 lg:flex-row">
-            <button class="bg-transparent w-full py-2 lg:px-4 lg:py-3 rounded-lg flex justify-center  items-center hover:cursor-pointer border-2 border-black-custom hover:font-semibold"> 
+            <button class="bg-transparent w-full py-2 lg:px-4 lg:py-3 rounded-lg flex justify-center  items-center hover:cursor-pointer border-2 border-black-custom hover:font-semibold" (click)="scrollTo('experience')"> 
                 <lucide-angular [img]="Eye" class="my-icon mr-1.5 w-5 h-5 stroke-2 stroke-black-custom"></lucide-angular>
                 <span class="font-normal text-md lg:text-lg text-black-custom"> {{ 'hero.ctaSecondary' | translate}}  </span>
             </button>
