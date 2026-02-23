@@ -5,20 +5,26 @@
         </div>
 
         <ul class="hidden lg:flex ">
-            <li class="flex items-center hover:cursor-pointer">
-                <a href="#experience" class="flex items-center p-4 text-md lg:text-lg font-normal  hover:text-gray-600 transition">
+            <li class="flex items-center hover:cursor-pointer" (click)="scrollTo('hero')">
+                <a class="flex items-center p-4 text-md lg:text-lg font-normal  hover:text-gray-600 transition">
+                    <lucide-angular [img]="Home"class="mr-1.5 w-6 h-6 stroke-1.5"></lucide-angular>
+                    {{ 'navbar.hero' | translate}}
+                </a>
+            </li>
+            <li class="flex items-center hover:cursor-pointer" (click)="scrollTo('experience')">
+                <a class="flex items-center p-4 text-md lg:text-lg font-normal  hover:text-gray-600 transition">
                     <lucide-angular [img]="BriefcaseBusiness"class="mr-1.5 w-6 h-6 stroke-1.5"></lucide-angular>
                     {{ 'navbar.experience' | translate}}
                 </a>
             </li>
-            <li class="flex items-center hover:cursor-pointer">
-                <a href="#experience" class="flex items-center p-4 text-md lg:text-lg font-normal  hover:text-gray-600 transition">
+            <li class="flex items-center hover:cursor-pointer" (click)="scrollTo('skills')">
+                <a class="flex items-center p-4 text-md lg:text-lg font-normal  hover:text-gray-600 transition">
                     <lucide-angular [img]="ChartNoAxesCombined"class="mr-1.5 w-6 h-6 stroke-1.5"></lucide-angular>
                     {{ 'navbar.skills' | translate}}
                 </a>
             </li>
-            <li class="flex items-center hover:cursor-pointer">
-                <a href="#experience" class="flex items-center p-4 text-md lg:text-lg font-normal  hover:text-gray-600 transition">
+            <li class="flex items-center hover:cursor-pointer" (click)="scrollTo('contact')">
+                <a class="flex items-center p-4 text-md lg:text-lg font-normal  hover:text-gray-600 transition">
                     <lucide-angular [img]="ContactRound"class="mr-1.5 w-6 h-6 stroke-1.5"></lucide-angular>
                     {{ 'navbar.contact' | translate}}
                 </a>
@@ -38,7 +44,7 @@
                 }
             </button>
 
-            <button class="bg-black-custom px-4 py-3 rounded-lg flex items-center hover:cursor-pointer hover:bg-black"> 
+            <button class="bg-black-custom px-4 py-3 rounded-lg flex items-center hover:cursor-pointer hover:bg-black" (click)="scrollTo('contact')"> 
                 <lucide-angular [img]="Phone" class="my-icon mr-1.5 w-5 h-5 stroke-2 stroke-white"></lucide-angular>
                 <span class="font-normal text-md lg:text-lg text-white"> {{ 'navbar.cta' | translate}}  </span>
             </button>
@@ -66,20 +72,26 @@
             </div>
 
             <ul class="flex w-full items-start justify-start flex-col">
-                <li class="flex items-center hover:cursor-pointer w-full">
-                    <a href="#experience" class="flex items-center p-4 text-md lg:text-lg font-normal  hover:text-gray-600 transition">
+                <li class="flex items-center hover:cursor-pointer w-full" (click)="scrollTo('hero')">
+                    <a class="flex items-center p-4 text-md lg:text-lg font-normal  hover:text-gray-600 transition">
+                        <lucide-angular [img]="Home"class="mr-1.5 w-6 h-6 stroke-1.5"></lucide-angular>
+                        {{ 'navbar.hero' | translate}}
+                    </a>
+                </li>
+                <li class="flex items-center hover:cursor-pointer w-full" (click)="scrollTo('experience')">
+                    <a class="flex items-center p-4 text-md lg:text-lg font-normal  hover:text-gray-600 transition">
                         <lucide-angular [img]="BriefcaseBusiness"class="mr-1.5 w-6 h-6 stroke-1.5"></lucide-angular>
                         {{ 'navbar.experience' | translate}}
                     </a>
                 </li>
-                <li class="flex items-center hover:cursor-pointer w-full">
-                    <a href="#experience" class="flex items-center p-4 text-md lg:text-lg font-normal  hover:text-gray-600 transition">
+                <li class="flex items-center hover:cursor-pointer w-full" (click)="scrollTo('skills')">
+                    <a class="flex items-center p-4 text-md lg:text-lg font-normal  hover:text-gray-600 transition">
                         <lucide-angular [img]="ChartNoAxesCombined"class="mr-1.5 w-6 h-6 stroke-1.5"></lucide-angular>
                         {{ 'navbar.skills' | translate}}
                     </a>
                 </li>
-                <li class="flex items-center hover:cursor-pointer w-full">
-                    <a href="#experience" class="flex items-center p-4 text-md lg:text-lg font-normal  hover:text-gray-600 transition">
+                <li class="flex items-center hover:cursor-pointer w-full" (click)="scrollTo('contact')">
+                    <a class="flex items-center p-4 text-md lg:text-lg font-normal  hover:text-gray-600 transition">
                         <lucide-angular [img]="ContactRound"class="mr-1.5 w-6 h-6 stroke-1.5"></lucide-angular>
                         {{ 'navbar.contact' | translate}}
                     </a>
@@ -100,7 +112,7 @@
                 }
             </button>
 
-            <button class="w-full bg-black-custom px-4 py-3 rounded-lg flex items-center justify-center hover:cursor-pointer hover:bg-black"> 
+            <button class="w-full bg-black-custom px-4 py-3 rounded-lg flex items-center justify-center hover:cursor-pointer hover:bg-black" (click)="scrollTo('contact')"> 
                 <lucide-angular [img]="Phone" class="my-icon mr-1.5 w-5 h-5 stroke-2 stroke-white"></lucide-angular>
                 <span class="font-normal text-md lg:text-lg text-white"> {{ 'navbar.cta' | translate}}  </span>
             </button>

@@ -18,3 +18,26 @@ html{
 html {
   scroll-behavior: smooth;
 }
+
+.animate-left {
+  opacity: 0;
+  transform: translateX(-80px);
+  transition: all 0.8s ease;
+}
+
+.animate-right {
+  opacity: 0;
+  transform: translateX(80px);
+  transition: all 0.8s ease;
+}
+
+.animate-fade {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0) translateY(0);
+}

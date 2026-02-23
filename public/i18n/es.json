@@ -1,5 +1,6 @@
 {
     "navbar" : {
+        "hero" : "Inicio",
         "experience" : "Experiencia",
         "skills" : "Skills",
         "contact" : "Contacto",
