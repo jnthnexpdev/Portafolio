@@ -15,8 +15,9 @@ html{
     font-family: "Outfit", sans-serif;
 }
 
-html {
+html, body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .animate-left {
