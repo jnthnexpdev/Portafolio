@@ -27,7 +27,41 @@
             </ul>
         </div>
 
-        <form action="" class="w-full md:w-3/5 md:max-w-110 lg:w-2/5 lg:max-w-150 p-5 flex items-center justify-center flex-col shadow-md rounded-xl">
+        <div class="actions w-full md:w-3/5 md:max-w-110 lg:w-2/5 lg:max-w-150 flex items-center justify-center flex-col">
+            <div class="w-full flex items-start flex-col">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jnthnexpdev@gmail.com" target="_blank" class="max-w-100 w-full sm:max-w-none shadow-sm p-5 rounded-lg flex items-start flex-col mb-6 hover:cursor-pointer hover:scale-101">
+                    <div class="icon flex items-center">
+                        <lucide-angular [img]="Mail" class="mr-2 w-6 h-6 stroke-2"></lucide-angular>
+                        <p class="text-xl font-medium"> {{ 'contact.buttons.email.label' | translate }} </p>
+                    </div>
+                    <div class="content flex flex-col items-start">
+                        <p class="ml-8 text-lg font-light text-left"> {{ 'contact.buttons.email.description' | translate }} </p>
+                    </div>
+                </a>
+
+                <a href="https://wa.me/527352236351" target="_blank" class="max-w-100 w-full sm:max-w-none shadow-sm p-5 rounded-lg flex items-start flex-col mb-6 hover:cursor-pointer hover:scale-101">
+                    <div class="icon flex items-center">
+                        <lucide-angular [img]="Smartphone" class="mr-2 w-6 h-6 stroke-2"></lucide-angular>
+                        <p class="text-xl font-medium"> {{ 'contact.buttons.whatsapp.label' | translate }} </p>
+                    </div>
+                    <div class="content flex flex-col items-start">
+                        <p class="ml-8 text-lg font-light text-left"> {{ 'contact.buttons.whatsapp.description' | translate }} </p>
+                    </div>
+                </a>
+
+                <a class="max-w-100 w-full sm:max-w-none shadow-sm p-5 rounded-lg flex items-start flex-col hover:cursor-pointer hover:scale-101">
+                    <div class="icon flex items-center">
+                        <lucide-angular [img]="FileText" class="mr-2 w-6 h-6 stroke-2"></lucide-angular>
+                        <p class="text-xl font-medium"> {{ 'contact.buttons.cv.label' | translate }} </p>
+                    </div>
+                    <div class="content flex flex-col items-start">
+                        <p class="ml-8 text-lg font-light text-left"> {{ 'contact.buttons.cv.description' | translate }} </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- <form action="" class="w-full md:w-3/5 md:max-w-110 lg:w-2/5 lg:max-w-150 p-5 flex items-center justify-center flex-col shadow-md rounded-xl">
             <h4 class="font-semibold text-2xl mb-2"> {{ 'contact.form.title' | translate }} </h4>
             
             <label for="full-name" class="w-full flex items-center justify-start font-medium text-lg mb-2">
@@ -56,7 +90,7 @@
                 <span class="font-normal text-md lg:text-lg text-white"> {{ 'contact.form.button' | translate}}  </span>
             </button>
 
-        </form>
+        </form> -->
     </div>
 
 

@@ -169,25 +169,23 @@
             "phone": "+52 735 223 6351",
             "email": "jnthnexpdev@gmail.com"
         },
-        "form": {
-            "title": "Envíame un mensaje",
-            "name": {
-                "label": "Nombre",
-                "placeholder": "Tu nombre completo",
-                "error": "El nombre es obligatorio"
-            },
+        "buttons": {
             "email": {
-                "label": "Correo electrónico",
-                "placeholder": "ejemplo@correo.com",
-                "error": "Ingresa un correo válido"
+                "label": "Enviar correo",
+                "description": "Escríbeme directamente por correo electrónico"
             },
-            "message": {
-                "label": "Mensaje",
-                "placeholder": "Cuéntame sobre tu proyecto o propuesta...",
-                "error": "El mensaje no puede estar vacío"
+            "whatsapp": {
+                "label": "Hablar por WhatsApp",
+                "description": "Conversemos rápidamente por WhatsApp"
             },
-            "button": "Enviar mensaje",
-            "success": "Mensaje enviado correctamente. Te responderé pronto."
+            "linkedin": {
+                "label": "Ver perfil en LinkedIn",
+                "description": "Conoce más sobre mi experiencia profesional"
+            },
+            "cv": {
+                "label": "Descargar CV",
+                "description": "Descarga mi currículum en formato PDF"
+            }
         }
     }
 
