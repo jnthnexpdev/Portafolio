@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 import { LucideAngularModule } from 'lucide-angular';
-import { Phone, MapPinned, Mail, AtSignIcon, Building, User, MessagesSquare } from 'lucide-angular/src/icons';
+import { Phone, MapPinned, Mail, AtSignIcon, Building, User, MessagesSquare, Smartphone, FileText } from 'lucide-angular/src/icons';
 
 @Component({
   selector: 'app-contact',
@@ -15,6 +15,8 @@ export class Contact {
     readonly MapPinned = MapPinned;
     readonly Building  = Building;
     readonly User = User;
+    readonly Smartphone = Smartphone;
+    readonly FileText = FileText;
     readonly AtSignIcon = AtSignIcon;
     readonly MessagesSquare = MessagesSquare;
 }
