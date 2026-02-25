@@ -49,7 +49,7 @@
                     </div>
                 </a>
 
-                <a class="max-w-100 w-full sm:max-w-none shadow-sm p-5 rounded-lg flex items-start flex-col hover:cursor-pointer hover:scale-101">
+                <a (click)="downloadCV()" class="max-w-100 w-full sm:max-w-none shadow-sm p-5 rounded-lg flex items-start flex-col hover:cursor-pointer hover:scale-101">
                     <div class="icon flex items-center">
                         <lucide-angular [img]="FileText" class="mr-2 w-6 h-6 stroke-2"></lucide-angular>
                         <p class="text-xl font-medium"> {{ 'contact.buttons.cv.label' | translate }} </p>

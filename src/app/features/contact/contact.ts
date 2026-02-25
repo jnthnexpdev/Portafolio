@@ -19,4 +19,11 @@ export class Contact {
     readonly FileText = FileText;
     readonly AtSignIcon = AtSignIcon;
     readonly MessagesSquare = MessagesSquare;
+
+    public downloadCV() : void{
+        const link = document.createElement('a');
+        link.href = 'cv/Jonathan_Espinosa_Frontend_Developer.pdf';
+        link.download = 'Jonathan_Espinosa_Frontend_Developer.pdf';
+        link.click();
+    }
 }
