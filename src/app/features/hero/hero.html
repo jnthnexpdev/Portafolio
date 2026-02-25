@@ -41,7 +41,7 @@
                 <span class="font-normal text-md lg:text-lg text-black-custom"> {{ 'hero.ctaSecondary' | translate}}  </span>
             </button>
 
-            <button class="bg-black-custom w-full py-2 lg:px-4 lg:py-3 border-2 border-black-custom rounded-lg flex justify-center items-center hover:cursor-pointer hover:bg-black hover:border-black hover:font-semibold"> 
+            <button (click)="downloadCV()" class="bg-black-custom w-full py-2 lg:px-4 lg:py-3 border-2 border-black-custom rounded-lg flex justify-center items-center hover:cursor-pointer hover:bg-black hover:border-black hover:font-semibold"> 
                 <lucide-angular [img]="FileDown" class="my-icon mr-1.5 w-5 h-5 stroke-2 stroke-white"></lucide-angular>
                 <span class="font-normal text-md lg:text-lg text-white"> {{ 'hero.ctaPrimary' | translate}}  </span>
             </button>

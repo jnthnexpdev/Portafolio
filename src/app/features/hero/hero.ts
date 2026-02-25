@@ -25,4 +25,11 @@ export class Hero {
             });
         }
     }
+
+    public downloadCV() : void{
+        const link = document.createElement('a');
+        link.href = 'cv/Jonathan_Espinosa_Frontend_Developer.pdf';
+        link.download = 'Jonathan_Espinosa_Frontend_Developer.pdf';
+        link.click();
+    }
 }
